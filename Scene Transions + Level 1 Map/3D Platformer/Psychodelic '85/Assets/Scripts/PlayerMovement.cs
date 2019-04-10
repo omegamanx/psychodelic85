@@ -84,6 +84,13 @@ public class PlayerMovement : MonoBehaviour
             Fading(index);
             Debug.Log("Lobby");
         }
+        else if (other.gameObject.CompareTag("Level 2"))
+        {
+            //SceneManager.LoadScene("Level 2");
+            index = "Level 2";
+            Fading(index);
+            Debug.Log("Load level 2");
+        }
         else
         {
             Debug.Log("This ain't it chief");
